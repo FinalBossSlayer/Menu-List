@@ -1,0 +1,16 @@
+// Source mixin
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    max-width: 540px;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  // Usage
+  .custom-container {
+    @include make-container(15px);
+  }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
